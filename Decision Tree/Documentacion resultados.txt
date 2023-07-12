@@ -1,0 +1,11 @@
+Allan Barrantes, Javier Sandoval
+
+Punto 7. 
+
+Nuestro árbol tiene dos mejoras importantes que se deberían realizar:
+
+ 1. La primera es que no se logró implementar de manera correcta la funcionalidad para cuando el parámetro max_depth es None. Por lo tanto siempre se debe especificar la profundidad maxima.
+
+ 2. Hubo problemas igualmente con depth, para el caso de mushrooms y titanic respectivamente. Mushrooms soporta un max_depth maximo de 5 y titanic de 3. De lo contrario produce errores relacionados a propiedades de vectores. Se hicieron algunos ajustes pero igual se presentaban los errores.
+
+En cuanto a las predicciones en comparación a los modelos de sklearn. Nuestro árbol realizó predicciones bastante buenas, si bien no son iguales a los árboles de sklearn, con las matrices de confusión se pudo ver que para mushrooms y iris los niveles de exactitud son bastante buenos. Para el caso de titanic el nivel de exactitud se encuentra alrededor de 0.52, por lo que no fue el más óptimo en nuestro caso. 

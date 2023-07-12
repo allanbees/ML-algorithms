@@ -1,0 +1,13 @@
+La combinación con mejores resultados que se obtuvo fue: 
+
+fit(self, x, y, max_epochs=1000000, threshold=0.1e-4, learning_rate=0.1e-3, momentum=0.1e-4, decay=0.1e-10, error='mse', regularization='none', _lambda=0)
+
+Con un test_size y una semilla para el random_state de 21. 
+Los resultados obtenidos fueron un error de 5880.65 con un R cuadrado de 0.9152429147610472 para la regresión lineal implementada. El R cuadrado de la regresión lineal con sklearn fue de 0.9152645549350642
+Utilizando la misma configuración pero con 100000 epochs se obtuvo un R cuadrado de 0.8911694313549064 y un error de 7209.3384 
+
+Se probó la semilla 42 con la misma configuración de parámetros, sin embargo los resultados fueron más bajos que los obtenidos con semilla de 21. 
+Se obtuvo un R cuadrado de 0.8677469620146018 para mi regresión lineal y 0.8639672428962575 para la regresión lineal de sklearn. 
+
+Algo inusual que pasa es que en algunos casos, los datos predichos poseen valores negativos o los valores se alejan mucho del valor real. Ocurre tanto con sklearn como con el algoritmo implementado. Lo anterior puede ocurrir debido a que los valores de Y son muy bajos, medianos o  muy altos. 
+Si se pone un learning rate mayor al de la configuración, como 0.1e-2 entonces se empieza a presentar el efecto zig-zag y el error salta a valores sumamente altos. 

@@ -1,0 +1,19 @@
+Estudiantes:
+	- Allan Barrantes B80986
+	- Javier Sandoval B56762
+
+¿Qué observa de las imágenes? 
+
+- Se pudo observar que al inicio las imagenes no tienen ningún patrón, son puro ruido. Conforme avanzan las épocas, va tomando forma y empieza a parecer el dígito especificado.
+
+¿Se converge al dígito deseado? 
+
+- Sí, en este caso se proveen imágenes como evidencia (dígito 4)
+
+¿Qué modificaciones tuvo que realizar a las arquitecturas de sus redes para lograr el resultado deseado?
+
+- Añadir varias capas al clasificador y utilizar batchnorm ayudó bastante. En cuanto al generador igualmente se utilizó batchnorm y ayudó a obtener buenos resultados.
+
+¿Observa algún comportamiento al exceder cierta cantidad de iteraciones del algoritmo?
+
+- En algunos casos con muchas iteraciones y learning rates un poco altos, se puede ver como las imagenes convergen al dígito deseado pero luego se empieza a llenar de ruido y el dígito pierde forma.

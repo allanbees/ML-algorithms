@@ -1,0 +1,5 @@
+Allan Barrantes y Javier Sandoval
+
+Los mejores resultados se obtuvieron con la arquitectura de 6 neuronas de entrada, dos capas densas de 5 y 2, y una neurona como output. Además, función de activacion relu entre capas densas y sigmoide para output, la semilla utilizada para dividir el dataset fue 15 y un test size de 0.20
+La semilla de aleatoriedad para xavier en la inicialización de pesos fue 21. Se corrieron 100000-150000 epochs y los mejores resultados fueron un 86,7% accuracy, en general se obtuvieron resultados entre 83%-87%
+Se logró ver que el error disminuía, por lo que sí se hizo buen ajuste de pesos y logramos aprender que es todo un arte lograr encontrar una arquitectura adecuada para buenos resultados, como saber cuantas capas densas meter y cuantas neuronas en cada una por ejemplo. También la importancia de manejar aspectos como el decay en el training fue algo bastante importante en este lab, en cuanto al momentum no tanto.   
